@@ -1,1 +1,38 @@
 # Este será el archivo de configuración
+
+# Definición de opciones para estados y tipos de dispositivos y misiones
+options:
+  device_status:
+    - EXCELENTE
+    - BUENO
+    - ADVERTENCIA
+    - DEFECTUOSO
+    - INOPERABLE
+    - DESCONOCIDO
+  mission_status:
+    - OK para operar
+    - Se recomienda revisión exhaustiva antes de operar
+  device_type:
+    - satelite
+    - nave espacial
+    - vehiculo
+  mission:
+    - OrbitOne
+    - GalaxyTwo
+
+
+# Datos de misiones y dispositivos
+data:
+  - date: 'ddmmyyhhmiss'
+    mission: OrbitOne
+    device_type: satelite
+    device_status: EXCELENTE
+    mission_status: OK para operar
+    hash: hash1
+
+  - date: 'ddmmyyhhmiss'
+    mission: GalaxyTwo
+    device_type: nave espacial
+    device_status: BUENO
+    mission_status: Se recomienda revisión exhaustiva antes de operar
+    hash: hash2
